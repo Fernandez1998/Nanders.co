@@ -1,0 +1,25 @@
+body {
+    background-color:lightgray;
+  }
+  h1 {
+    
+    
+  }
+  p {
+    
+  }
+  nav {
+    float: Center;
+     /* only for demonstration, should be removed */
+ 
+  }
+  
+  /* Style the list inside the menu */
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  table, th, td {
+    text-align: center;
+    padding: auto;
+  }
