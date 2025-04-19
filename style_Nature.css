@@ -1,0 +1,120 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .background-image {
+    background-image: url('Index_HomePhoto.JPG'); /* Replace with your actual image path */
+    background-size: cover; /* This will ensure the image covers the screen */
+    background-position: bottom;
+    height: 40vh;
+    width: 100%;
+    position: fixed; /* Fix the background image in place */
+    z-index: -1; /* Ensure the background is behind everything */
+    background-attachment: fixed; /* Prevent zooming in and out when scrolling */
+    background-repeat: no-repeat;
+  }
+  
+  
+  .banner-container {
+    height: 60px; /* Area you can hover over */
+  }
+  
+  .top-banner {
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: transparent; /* Transparent by default */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+  }
+  
+  .banner-left {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  .banner-center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 20px;
+    font-weight: bold;
+    white-space: nowrap;
+    padding: 10px; /* Optional, add padding around the text */
+    color: white; 
+  }
+  
+  .banner-container:hover .top-banner {
+    background-color: rgba(76, 175, 80, 0.95); /* Background color only appears on hover */
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropbtn {
+    background-color: transparent;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    z-index: 1001;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown:hover .dropbtn {
+    background-color: rgba(76, 175, 80, 0.8); /* Changes color only when hovering over the button */
+  }
+  
+  .content {
+    padding: 100px 20px;
+    text-align: center;
+  }
+  
+  h1 {
+    color: #333;
+  }
+  
+  p {
+    font-size: 16px;
+  }
+  table, th, td {
+  text-align: center;
+  padding: auto;
+  padding-top: 20px ;
+}
