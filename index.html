@@ -99,11 +99,6 @@
     font-size:0.72rem; letter-spacing:0.1em;
     cursor:pointer;
   }
-  .frame img, .about-img img, .hero img{
-  width:100%; height:100%;
-  object-fit:cover;
-  display:block;
-}
 
   /* ---------- HERO ---------- */
   .hero{
@@ -217,6 +212,11 @@
     grid-template-columns:repeat(6,1fr);
     gap:1.1rem;
   }
+   .frame img, .about-img img, .hero img{
+  width:100%; height:100%;
+  object-fit:cover;
+  display:block;
+}
 
   .frame{
     position:relative;
@@ -448,7 +448,7 @@
 
   <!-- ============ HERO ============ -->
   <section class="hero" id="top">
-    <img src="Index_HomePhoto.JPG" alt="Description of the photo">
+      <img src="Index_HomePhoto.JPG" alt="Description of the photo">
       <defs>
         <linearGradient id="skyHero" x1="0" y1="0" x2="0" y2="1">
           <stop offset="0%" stop-color="#0A0D0C"/>
@@ -471,7 +471,7 @@
       <path d="M0,560 L140,420 L260,510 L400,360 L560,500 L720,380 L900,520 L1080,410 L1260,540 L1400,470 L1400,900 L0,900 Z" fill="url(#ridgeFar)"/>
       <path d="M0,660 L180,560 L340,650 L520,530 L680,640 L860,540 L1040,660 L1220,580 L1400,650 L1400,900 L0,900 Z" fill="url(#ridgeMid)"/>
       <path d="M0,760 L220,690 L460,750 L680,680 L920,760 L1160,700 L1400,760 L1400,900 L0,900 Z" fill="#0E1211"/>
-    </svg>
+    </img>
     <div class="fog-layer"></div>
     <div class="hero-content">
       <span class="eyebrow">Nanders — Field &amp; Landscape Photography</span>
@@ -495,14 +495,14 @@
     <div class="gallery" id="gallery">
 
       <figure class="frame" tabindex="0">
-        <svg viewBox="0 0 800 550" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <img src="AF6_3690.jpg" alt="Description of the photo">
           <defs><linearGradient id="g1" x1="0" y1="0" x2="0" y2="1">
             <stop offset="0%" stop-color="#12201C"/><stop offset="55%" stop-color="#4A5D4E"/><stop offset="100%" stop-color="#C1834D"/>
           </linearGradient></defs>
           <rect width="800" height="550" fill="url(#g1)"/>
           <path d="M0,340 L160,260 L300,320 L460,230 L620,310 L800,250 L800,550 L0,550 Z" fill="#0E1210" opacity="0.85"/>
           <path d="M0,410 L220,360 L400,400 L620,350 L800,400 L800,550 L0,550 Z" fill="#0A0D0C"/>
-        </svg>
+        </img>
         <figcaption class="frame-cap">
           <span class="loc">Tallgrass Divide, dusk</span>
           <span class="data">46.7°N, 113.4°W — 30s, f/11, ISO 100</span>
@@ -510,14 +510,14 @@
       </figure>
 
       <figure class="frame" tabindex="0">
-        <svg viewBox="0 0 560 750" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <img src="AF6_3519.jpg" alt="Description of the photo">
           <defs><linearGradient id="g2" x1="0" y1="0" x2="0" y2="1">
             <stop offset="0%" stop-color="#0A0D0C"/><stop offset="60%" stop-color="#2E3B3E"/><stop offset="100%" stop-color="#7E938E"/>
           </linearGradient></defs>
           <rect width="560" height="750" fill="url(#g2)"/>
           <rect x="0" y="520" width="560" height="230" fill="#0E1412" opacity="0.9"/>
           <line x1="60" y1="80" x2="60" y2="750" stroke="#7E938E" stroke-width="2" opacity="0.4"/>
-        </svg>
+        </img>
         <figcaption class="frame-cap">
           <span class="loc">Standing Timber, fog</span>
           <span class="data">05:52 — -2°C, mist lifting</span>
@@ -525,13 +525,13 @@
       </figure>
 
       <figure class="frame" tabindex="0">
-        <svg viewBox="0 0 560 750" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <img src="AF6_3611.jpg" alt="Description of the photo">
           <defs><linearGradient id="g3" x1="0" y1="1" x2="0" y2="0">
             <stop offset="0%" stop-color="#0A0D0C"/><stop offset="55%" stop-color="#3B2E23"/><stop offset="100%" stop-color="#C1834D"/>
           </linearGradient></defs>
           <rect width="560" height="750" fill="url(#g3)"/>
           <path d="M0,600 L120,540 L260,590 L400,520 L560,570 L560,750 L0,750 Z" fill="#0E1210"/>
-        </svg>
+        </img>
         <figcaption class="frame-cap">
           <span class="loc">Coastal Ridge, sunrise</span>
           <span class="data">1/60, f/8, ND filter</span>
@@ -539,14 +539,14 @@
       </figure>
 
       <figure class="frame" tabindex="0">
-        <svg viewBox="0 0 560 750" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <img src="AF6_3467.jpg" alt="Description of the photo">
           <defs><linearGradient id="g4" x1="0" y1="0" x2="0" y2="1">
             <stop offset="0%" stop-color="#0B1418"/><stop offset="60%" stop-color="#1F3238"/><stop offset="100%" stop-color="#7E938E"/>
           </linearGradient></defs>
           <rect width="560" height="750" fill="url(#g4)"/>
           <circle cx="420" cy="180" r="60" fill="#EFEAE0" opacity="0.5"/>
           <path d="M0,560 L180,480 L340,540 L560,470 L560,750 L0,750 Z" fill="#08100E"/>
-        </svg>
+        </img>
         <figcaption class="frame-cap">
           <span class="loc">Glass Lake, blue hour</span>
           <span class="data">61.1°N, 26.9°E — long exposure</span>
@@ -554,13 +554,13 @@
       </figure>
 
       <figure class="frame" tabindex="0">
-        <svg viewBox="0 0 720 560" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <img src="AF6_3471.jpg" alt="Description of the photo">
           <defs><linearGradient id="g5" x1="0" y1="0" x2="1" y2="1">
             <stop offset="0%" stop-color="#171F1C"/><stop offset="70%" stop-color="#4E5D59"/><stop offset="100%" stop-color="#7E938E"/>
           </linearGradient></defs>
           <rect width="720" height="560" fill="url(#g5)"/>
           <path d="M0,380 L200,300 L360,360 L560,280 L720,340 L720,560 L0,560 Z" fill="#0C1210"/>
-        </svg>
+        </img>
         <figcaption class="frame-cap">
           <span class="loc">North Fork Basin</span>
           <span class="data">Overcast, diffused light</span>
@@ -568,13 +568,13 @@
       </figure>
 
       <figure class="frame" tabindex="0">
-        <svg viewBox="0 0 720 560" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <img src="AF6_2700.jpg" alt="Description of the photo">
           <defs><linearGradient id="g6" x1="0" y1="0" x2="0" y2="1">
             <stop offset="0%" stop-color="#0A0D0C"/><stop offset="50%" stop-color="#2A241C"/><stop offset="100%" stop-color="#C1834D"/>
           </linearGradient></defs>
           <rect width="720" height="560" fill="url(#g6)"/>
           <path d="M0,420 L140,350 L280,400 L440,330 L600,390 L720,340 L720,560 L0,560 Z" fill="#0E0E0C"/>
-        </svg>
+        </img>
         <figcaption class="frame-cap">
           <span class="loc">Dry Basin, golden hour</span>
           <span class="data">1/250, f/5.6, 85mm</span>
@@ -590,12 +590,13 @@
   <section id="about" style="max-width:none; padding-left:0; padding-right:0;">
     <div class="about" style="max-width:var(--maxw); margin:0 auto; padding:clamp(3rem,7vw,5.5rem) clamp(1.2rem,4vw,3.5rem);">
       <div class="about-img">
-        <svg viewBox="0 0 500 620" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <defs><linearGradient id="gA" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0%" stop-color="#0A0D0C"/><stop offset="55%" stop-color="#38423C"/><stop offset="100%" stop-color="#7E938E"/>
-          </linearGradient></defs>
-          <rect width="500" height="620" fill="url(#gA)"/>
-          <path d="M0,440 L120,380 L240,420 L360,360 L500,410 L500,620 L0,620 Z" fill="#0C100E"/>
+        <img src="AF6_2926.jpg" alt="Description of the photo">
+      </div>
+      <div class="about-text">
+        <span class="eyebrow">About</span>
+        <h2>Field work, mostly at bad hours.</h2>
+        <p>I'm Nanders — a landscape photographer working mostly before sunrise and after dark, when the light is scarce enough to mean something. Most of what's on this site comes from long drives, longer waits, and the occasional bad decision to sit in the cold a little longer.</p>
+        <p>I care about <strong>place</strong> more than gear: the specific hour, the specific weather, the way fog sits differently over water than over stone. Prints are made in small runs, printed and checked by hand.</p>
         </svg>
       </div>
       <div class="about-text">
@@ -618,7 +619,7 @@
     <h2 style="margin-top:1rem;">Prints, commissions, and <em>quiet correspondence</em>.</h2>
     <div class="contact-row">
       <div class="contact-links">
-        <a href="mailto:fernandez.alex@nanders.co">hello@nanders.co</a>
+        <a href="mailto:fernandez.alex@nanders.co">fernandez.alex@nanders.co</a>
         <a href="#">Instagram</a>
         <a href="#">Print shop</a>
       </div>
